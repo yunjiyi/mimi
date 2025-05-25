@@ -485,6 +485,6 @@ except Exception as e:
 # --- Main Execution (for direct python app.py run only) ---
 if __name__ == '__main__':
     logger.info("Running Flask development server (not for production)...")
-    port = int(os.getenv('FLASK_RUN_PORT', 6020))
+    port = int(os.getenv('FLASK_RUN_PORT', 5000))
     debug_mode = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
     app.run(host='0.0.0.0', port=port, debug=debug_mode)
